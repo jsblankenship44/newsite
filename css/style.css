@@ -1,0 +1,351 @@
+html,
+body {
+    font-size: 16px;
+    font-family: "Cubano-Regular";
+    background: white;
+}
+
+
+/* Font Faces */
+
+@font-face {
+    font-family: "Cubano-Regular";
+    src: local("Cubano-Regular.otf"), url("Cubano-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Nunito-Regular";
+    src: local("Nunito-Regular.ttf"), url("Nunito-Regular.ttf") format("truetype");
+    }
+
+/* Cover Section */
+
+#coverimage {
+    height: 100%;
+    background: url(../img/simon-rae-3208171.jpg) center;
+    background-size: cover;
+    color: white;
+}
+
+.wall-sticker {
+    background: rgba(0,0,0,.45);
+    padding: 14rem 2rem 15rem 3rem;
+    font-family: "Cubano-Regular";
+    font-size: 35px;
+    text-align: center
+}
+
+.moto {
+    font-family: "Cubano-Regular";
+    font-size: 35px;
+    margin-top: 14rem;
+    margin-left: 35px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 992px){
+    .wall-sticker,
+    .moto {
+        font-size: 15px
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .moto {
+        display: none;
+    }
+}
+
+/* NAVBAR */
+
+.navbar-brand{
+    font-family: "Cubano-Regular";
+    padding-right: 15px;
+}
+
+#main-nav {
+    font-family: inherit;
+}
+
+#main-nav li a {
+    border-bottom: 1px solid transparent;
+}
+
+#main-nav li a:hover {
+    border-bottom: 1px solid blue;
+    transition: 0.5s;
+}
+
+/* Buttons */
+
+.btn-lg,
+.btn-success-outline {
+    background-color: transparent;
+    border-radius: 15px;
+    border-color: 1px solid rgba(0,0,0,0);
+    transition: .5s;
+}
+
+.btn-lg:hover,
+.btn-lg:focus,
+.btn-lg:active,
+.btn-success-outline:hover,
+.btn-success-outline:focus,
+.btn-success-outline:active {
+    background-color: rgba(19, 128, 36, .54);
+    border: 1px solid rgba(19, 128, 26, 0);
+    transition: .5s;
+}
+
+.employ-btn,
+.foster-btn {
+    width: 300px;
+    margin: 30px auto 0 auto;
+    background-color: green;
+}
+
+.btn {
+    white-space: normal !important;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.submit {
+    width: 265px;
+    margin: 30px  0;
+    background-color: #99ccff;
+    
+}
+
+/* banner */
+
+.banner {
+    background: url(../img/chs_banner3.jpg)center center;
+    text-align: center;
+}
+
+/* Programs */
+
+.heading,
+.pmore,
+.program {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+/* Locations */
+
+#location {
+    background: url(../img/pattern.jpg)center center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.locationhead {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card,
+.card-title,
+.card-text,
+.card img {
+    text-align: center;
+    transition: 1s;
+    padding-bottom: 2rem;
+}
+
+.card-img-top:hover {
+    transform: scale(0.98);
+    transition: 1s;
+}
+
+/* news and events */
+
+#newsevents {
+    background: rgba(135, 206, 236, 1);
+    padding-top: 2rem;
+}
+
+.col-sm-6 {
+    text-align: right;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+.feeds {
+    text-align: center;
+    padding-top: 2rem;
+    color: white;
+}
+
+.responsivecal {
+
+position: relative;
+padding-bottom: 75%;
+height: 0;
+overflow: hidden;
+
+}
+
+.responsivecal iframe {
+
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+
+}
+
+/* employment */
+
+#employ {
+    text-align: center;
+    background: url(../img/carnakids.JPG) center repeat fixed;
+    padding: 200px 0;
+    background-size: cover;
+    color: white;
+}
+
+/* contact us */
+
+h2 {
+    text-align: center;
+    padding: 3.5rem;
+}
+
+.field {
+    text-align: left !important;
+}
+
+/* location tabs */
+
+/* .loc_tab {
+	margin-right: 20px;
+	padding: 0 10px 0px 10px;
+	font-size: 25px;
+	font-family: "Nunito-Regular";
+	font-weight: bold;
+} */
+
+#centeredmenu {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#centeredmenu ul {
+	clear: left;
+	float: left;
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+	position: relative;
+	/*left: 50%;*/
+	text-align: center;
+}
+
+#centeredmenu ul li {
+	display: block;
+	/*margin: 0;
+	padding: 0;*/
+	position: relative;
+	/*right: 50%;*/
+	margin-right: 20px;
+	padding: 0 10px 0px 10px;
+	font-size: 25px;
+	font-family: "Nunito-Regular";
+	font-weight: bold;
+}
+
+#centeredmenu ul li a {
+	display: block;
+	margin: 0 0 0 1px;
+	padding: 3px 10px;	
+}
+
+.locationinfo {
+	margin: 0 50px 0 50px;
+}
+
+.locationdetail {
+	float: right;
+	font-family: "Nunito-Regular";
+	font-size: larger;
+	margin-left: 5px;
+}
+
+#jumbotron-background-1 {
+	background-color: #ACE1FF;	
+}
+
+#jumbotron-background-2 {
+	background-color: white;
+}
+
+.nolead {
+font-family: "Nunito-Regular";
+}
+
+.services {
+	float: right;
+	width: 289px;
+	border: 3px black outset;
+	margin-top: 10px;
+	padding: 20px 10px 20px 10px;
+	text-align: center;
+	font-family: "Nunito-Regular";
+	font-weight: bold;
+}
+
+#cardcolor-1 {
+	background-color: white;
+}
+
+#cardcolor-2 {
+	background-color: #ACE1FF;
+}
+
+#parkersburg {
+	padding-bottom: 160px;
+}
+
+#romney {
+	padding-bottom: 220px;
+}
+
+.tab-content h3 {
+	text-align: center;
+}
+/* contact us section */
+
+
+
+/* Footer */
+
+#footer {
+    color: white;
+    height: 100%;
+    padding: 2.5rem;
+    font-family: "Nunito-Regular";
+    background: linear-gradient(rgba(76, 142, 208, 1) , white);
+}
+
+.list-group-item {
+    background: transparent;
+    border: none;
+}
+
+.cr {
+    text-align: center;
+}
+
+.footer_image {
+    text-align: center;
+    color: blue;
+}
